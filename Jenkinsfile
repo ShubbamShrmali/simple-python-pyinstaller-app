@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') { 
             agent {
-               any {
+               docker {
                     image 'qnib/pytest' 
                 }
             }
